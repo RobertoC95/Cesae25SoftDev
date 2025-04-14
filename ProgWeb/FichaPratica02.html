@@ -4,37 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roberto Couto</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Sobre Mim</h1>
+        <h1 id="título">Sobre Mim</h1>
     </header>
+    <br>
+    <br>
     <main>
         <section>
-            <p> O meu nome é Roberto tenho 29 anos e sou de esposende. <br>
-                Estudei engenharia mecânica no Isep, não tendo concluído o curso. <br>
-                Entretanto decidi entrar no mercado de trabalho até que surgiu a oportunidade de uma carreira melhor.</p>
-                <img src="./img/foto palmeira.jpeg" alt="400" width="400">
-                <ul> 
-                    <li>Futebol</li>
-                    <li>Formula 1 </li>
-                    <li>Musica</li>
-                </ul> 
+            <p id="resumo"> O meu nome é Roberto tenho 29 anos e sou de esposende. 
+              <br>
+                Estudei engenharia mecânica no Isep,tendo ainda o curso por concluir. 
+                <br>
+                Entretanto decidi entrar no mercado de trabalho até que surgiu a oportunidade de uma carreira melhor.
+            </p>
+            <br>
+            <img id="imagem" src="./img/foto palmeira.jpeg" alt="200" width="200">
+            <br>
+            <br>
+            <h1 class="interesses">Interesses</h1>
+            <br>
+            <ul class="lista">
+              <li>Futebol</li>
+              <li>Formula 1 </li>
+              <li>Musica</li>
+            </ul> 
+            <br>
+            <h1>Links</h1>
+            <br>
                 <a href="https://www.zerozero.pt/jogador/couto/296981?search=1">zerozero </a>
         </section>
+        <br>
+        <br>
         <section>
-            <form> 
+            <h1 class="formulario1"> Formulário </h1>
+            <br>
+            <form class="formulario"> 
                 <label>Nome</label>
                 <input type="text"> <br><br>
                 <label>email</label>
                 <input type="email"> <br><br>
                 <label>Mensagem</label>
-                <textarea></textarea> <br><br>
+                <textarea class="Mensagem"></textarea> <br><br>
                 <input type="submit">
-            </form>  
+            </form> 
+            <br> 
         </section>
         <section>
-            <table>
+          
+            <!-- <table>
                 <tr>
                   <th>Formação Académica</th>   
                   <th>Escola</th>
@@ -50,32 +70,51 @@
                   <td>Isep</td>
                   <td>Eng. Mecânica Automóvel</td>
                 </tr>
-            </table>
+            </table> -->
+          
+          <div class="container">
+            <div class="Formação Académica">Formação Académica</div>
+            <div class="Escola">Escola</div>
+            <div class="Curso">Curso</div>
+          </div>
+          <br>
+          <div class="linha1">
+            <div class="ensino secundario">Ensino Secundario</div>
+            <div class="ESHM">ESHM</div>
+            <div class="12º ano">12º ano</div>
+          </div>
+          <br>
+          <div class="linha2">
+            <div class="ensino superior">Ensino Superior</div>
+            <div class="ESHM">Isep</div>
+            <div class="12º ano">Eng. Mecânica Automóvel</div>
+          </div>
             <br>
             <br>
-            <table>
-                <tr>
-                  <th>Experiência Profissional</th> 
-                </tr>
-                <tr>
-                  <th>Empresa</th>
-                  <th>Profissão</th>
-                </tr>
-                <tr>
-                  <td>Continente</td>
-                  <td>Repositor de stock</td>
-                </tr>
-                <tr>
-                  <td>FS Pladur</td>
-                  <td>Montador de Pladur</td>
-                </tr>
-            </table>
+            <br>
+            <div class="container">
+              <div class="Experiência Profissional">Experiência Profissional</div>
+              <div class="Empresa">Empresa</div>
+              <div class="Cargo">Cargo</div>
+            </div>
+            <br>
+            <div class="linha1">
+              <div class="Continente">Primeiro</div>
+              <div class="Continente">Continente</div>
+              <div class="Reposição">Reposição</div>
+            </div>
+            <br>
+            <div class="linha2">
+              <div class="ensino superior">Segundo</div>
+              <div class="FS Pladur">FS Pladur</div>
+              <div class="Montador de Pladur">Montador de Pladur</div>
+            </div>
         </section>
     </main>
     <br>
     <br>
     <footer>
-        <p>Cesae Digital 2025</p>
+        <p id="footer">Cesae Digital 2025</p>
     </footer>
 </body>
 </html>
