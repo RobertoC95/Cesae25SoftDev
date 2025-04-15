@@ -62,16 +62,30 @@ ul{
 h1{
     font-weight: bold;
 }
+.link:hover{
+    background-color: yellow;
+    font-size: 20px;
+}
 label{
     font-size: 80%;
     text-decoration: underline;
 }
+button {
+background-color: white;
+border: black;
+padding: 6px 15px;
+cursor:grab;
+}
+button:active{
+    background-color: orange;
+}
 .formulario{
-box-sizing: border-box;
 background: darkgray;
 padding: 4px;
 margin-right: 75%;
 align-items: baseline;
+border: 1px solid blue;
+box-sizing: border-box;
 }
 .Mensagem{
     width: 200px;
@@ -91,11 +105,13 @@ div {
 }
 .linha1, .linha2 {
     background: grey;
+    border: 1px solid blue;
+    box-sizing: border-box;
 }
-
 #footer{ 
     font-size: 10px;
     color: black;
     background: white;
     padding: 2px;
+    border:1px solid blue;
 }
