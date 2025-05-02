@@ -5,15 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roberto Couto</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 </head>
 <body>
-    <header>
+  <!--navbar-->
+  <div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Meu Portfólio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </div>
         <h1 id="título">Sobre Mim</h1>
-    </header>
     <br>
     <br>
     <main>
-        <section>
+      <div>
             <p id="resumo"> O meu nome é Roberto tenho 29 anos e sou de esposende. 
               <br>
                 Estudei engenharia mecânica no Isep,tendo ainda o curso por concluir. 
@@ -24,22 +62,30 @@
             <img id="imagem" src="./img/foto palmeira.jpeg" alt="200" width="200">
             <br>
             <br>
-            <h1 class="interesses">Interesses</h1>
+            <h2 class="cabeçalho">Interesses</h2>
             <br>
-            <ul class="lista">
+      </div>
+      <div>
+            <!-- <ul class="lista">
               <li>Futebol</li>
               <li>Formula 1 </li>
               <li>Musica</li>
-            </ul> 
+            </ul>  -->
+            <ul class="list-group">
+              <li class="list-group-item">Futebol</li>
+              <li class="list-group-item">Formula 1</li>
+              <li class="list-group-item">Música</li>
+              <li class="list-group-item">NBA</li>
+            </ul>
+      </div>
             <br>
-            <h1>Links</h1>
+            <h2 class="cabeçalho">Links</h2>
             <br>
-                <a class="link" href="https://www.zerozero.pt/jogador/couto/296981?search=1">zerozero </a>
-        </section>
+                <a class="link" href="https://www.zerozero.pt/jogador/couto/296981?search=1" target="_blank">zerozero </a>
         <br>
         <br>
-        <section>
-            <h1 class="formulario1"> Formulário </h1>
+        <div>
+            <!-- <h1 class="formulario1"> Formulário </h1>
             <br>
             <form class="formulario"> 
                 <label>Nome</label>
@@ -49,10 +95,25 @@
                 <label>Mensagem</label>
                 <textarea class="Mensagem"></textarea> <br><br>
                 <button>Submeter</button>
-            </form> 
+            </form>  -->
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else, for the right price.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
             <br> 
-        </section>
-        <section>
+        </div>
           
             <!-- <table>
                 <tr>
@@ -71,7 +132,8 @@
                   <td>Eng. Mecânica Automóvel</td>
                 </tr>
             </table> -->
-          
+            <!--old table try to fix it later-->
+          <!-- <div class="eduprof">
           <div class="container">
             <div class="Formação Académica">Formação Académica</div>
             <div class="Escola">Escola</div>
@@ -108,12 +170,64 @@
               <div class="FS Pladur">FS Pladur</div>
               <div class="Montador de Pladur">Montador de Pladur</div>
             </div>
-        </section>
+          </div> -->
+          <div>
+            <h2 class="cabeçalho">Educação</h2>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Grau Academico</th>
+                  <th scope="col">Escola</th>
+                  <th scope="col">Curso</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Ensino Secundario</td>
+                  <td>ESHM</td>
+                  <td>12ºano</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Ensino Superior</td>
+                  <td>Isep</td>
+                  <td>Eng. Mecânica Automóvel</td>
+                </tr>
+              </tbody>
+            </table>  
+          </div>
+          <div>
+            <h2 class="cabeçalho">Experiência Profissional</h2>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Empresa</th>
+                  <th scope="col">Cargo</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Continente</td>
+                  <td>Reposição de Stcok</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>FS Pladur</td>
+                  <td>Montador de Pladur</td>
+                </tr>
+              </tbody>
+            </table>  
+          </div>
     </main>
     <br>
     <br>
     <footer>
         <p id="footer">Cesae Digital 2025</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 </body>
 </html>
