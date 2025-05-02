@@ -3,11 +3,9 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
-}
-body {
-  background-color: tan;
-  color: white;
-}
+    background-color: lightgray;
+    color: white;
+  }
 /* 992px or less */
 @media screen and (max-width:992px) {
   body {
@@ -16,15 +14,17 @@ body {
   }
 }
 /* 600px or less*/
-@media screen {
+@media screen and (max-widht:600px){
   body {
     background-color:lightgray;
     color: white;
   }
 }
 #título {
+    font-weight: bold;
     font-size: 35px;
     color: black;
+    font-family: 'Courier New', Courier, monospace;
 }
 #resumo {
     font-size: 14px;
@@ -42,6 +42,12 @@ h1 {
     font-weight: bold;
     color: black;
 }
+.cabeçalho {
+    font-weight: bold;
+    color: black;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+}
 ul {
     list-style-type: disc;
 }
@@ -52,15 +58,12 @@ li{
 .lista{
     list-style-position: inside;
 }
-ul{
+.list-group{
     background: darkgrey;
+    border: 2px solid gray;
     padding: 10px;
-    margin-left: 20px;
-    margin-right: 85%;
+    width: 200px;
     box-shadow: 10px 10px 5px 3px rgba(0,0,0,0.5) ;
-}
-h1{
-    font-weight: bold;
 }
 .link:hover{
     background-color: yellow;
@@ -91,12 +94,11 @@ box-sizing: border-box;
     width: 200px;
     height: 50px;
 }
-div {
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        gap: 20px;
+.eduprof {
+       flex-direction: row;
 }
 .container{
+    flex-direction: row;
     font-size: 20px;
     font-weight: bold;
     color: black;
